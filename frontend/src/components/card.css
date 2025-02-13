@@ -1,0 +1,42 @@
+.card{
+    display: flex;
+    
+}
+
+
+.card-head{
+    margin: 3rem 6rem 2rem;
+}
+
+.cards{
+    display: flex;
+    gap: 222rem;
+    margin: 2rem 4rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+
+.card-body{
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+.card-body a{
+    position: absolute;
+    top: 75%;
+}
+
+.card-text{
+    position: absolute;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.card-nav-btn {
+    display: flex;
+    justify-content: center;
+}
