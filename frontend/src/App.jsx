@@ -1,10 +1,10 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-import Search_bar from './components/search_bar';
-import Card from './components/card';
-import Footer from './components/Footer';
+
+import Home from './pages/Home'
+import About from './pages/About'
+import Listing from './pages/Listing'
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -12,12 +12,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const App = () => {
   return (
-    <div className='container' style={{margin:"0",padding:"0",maxWidth:"100%"}}>
-        <Navbar/> 
-        <Header/>
-        <Search_bar/>
-        <Card/>
-        <Footer/>
+    <div>
+      <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/listing' element={<Listing/>}/>
+          </Routes>
+      </BrowserRouter>
 
 
     </div>

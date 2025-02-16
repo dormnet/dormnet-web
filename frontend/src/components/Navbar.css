@@ -1,16 +1,21 @@
 .navbar{
+    position: fixed;
     background-color: white;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 100%;
+   
 
-    
 }
 
 .container-fluid{
-    padding: 2px;
+    padding: 0 20px;
 }
 
 .navbar-brand{
     font-weight: 500;
+    font-size: 26px;
+    padding:0px 40px ;
 }
 
 .nav-item{
@@ -18,17 +23,18 @@
 }
 
 .collapse{
-    justify-content: right;
-}
-.container{
-    margin: 0;
+    justify-content: flex-end;
+
 }
 
+.navbar-nav{
+    font-size: 16px;
+    padding:0px 10px;
+}
 
+.body{
+    margin-top: 80px;
+}
 
-body{
-    margin: 0px;
-   }
-  
 
 

@@ -24,8 +24,11 @@ const SearchBar = () => {
   };
 
   return (
-    <nav className="navbar bg-body-tertiary p-3 shadow-sm">
-      <div className="container-fluid d-flex justify-content-center">
+    <nav className="navbar bg-body-tertiary p-3 shadow-sm" 
+    style={{
+      position:"sticky",top:"60px",zIndex:"999"
+      }}>
+      <div className="container-fluid d-flex justify-content-center" >
         <form
           className="d-flex align-items-center gap-2"
           role="search"
@@ -36,9 +39,9 @@ const SearchBar = () => {
             className="form-select"
             value={selectedUniversity}
             onChange={(e) => setSelectedUniversity(e.target.value)}
-            style={{ minWidth: "250px", borderRadius: "8px" }}
+            style={{ minWidth: "250px", borderRadius: "16px" }}
           >
-            <option value="">🏫 Choose a University</option>
+            <option value="">Choose a University</option>
             <option value="colombo">University of Colombo</option>
             <option value="peradeniya">University of Peradeniya</option>
             <option value="sri_jayewardenepura">University of Sri Jayewardenepura</option>
@@ -60,9 +63,9 @@ const SearchBar = () => {
             className="form-select"
             value={selectedPrice}
             onChange={(e) => setSelectedPrice(e.target.value)}
-            style={{ minWidth: "180px", borderRadius: "8px" }}
+            style={{ minWidth: "180px", borderRadius: "16px" }}
           >
-            <option value="">💰 Select Price Range</option>
+            <option value="">Select Price Range</option>
             <option value="budget">Budget (LKR 10,000 - LKR 30,000)</option>
             <option value="midrange">Mid-Range (LKR 30,000 - LKR 75,000)</option>
             <option value="premium">Premium (LKR 75,000+)</option>
@@ -73,16 +76,16 @@ const SearchBar = () => {
             className="form-select"
             value={selectedRoomType}
             onChange={(e) => setSelectedRoomType(e.target.value)}
-            style={{ minWidth: "180px", borderRadius: "8px" }}
+            style={{ minWidth: "180px", borderRadius: "16px" }}
           >
-            <option value="">🛏️ Select Room Type</option>
+            <option value="">Select Room Type</option>
             <option value="shared">Shared Room</option>
             <option value="single">Single Room</option>
           </select>
 
           {/* Search Button */}
           <button className="btn btn-primary px-4" type="submit">
-            🔍 Search
+            Search
           </button>
 
           {/* Reset Button */}
@@ -91,7 +94,7 @@ const SearchBar = () => {
             type="button"
             onClick={handleReset}
           >
-            🔄 Reset
+            Reset
           </button>
         </form>
       </div>

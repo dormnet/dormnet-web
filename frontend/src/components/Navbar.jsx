@@ -3,14 +3,14 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg" style={{borderTop:"4px solid #ADD8E6"}}>
+    <nav className="navbar navbar-expand-lg" style={{borderTop:"4px solid #ADD8E6",position:"fixed"}}>
       <div className="container-fluid">
-      <a className="navbar-brand" href="#" style={{ fontSize: "26px", padding:"0px 40px" }}>Dormnet</a>
+      <a className="navbar-brand" href="#" >Dormnet</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNavDropdown" style={{ fontSize: "16px", padding:"0px 10px" }}>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">Home</a>
